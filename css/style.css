@@ -6,12 +6,15 @@
     box-sizing: border-box;
 }
 
+/* general */
+
 /* header */
 #navbar {
 	background: #000;
 	display: flex;
 	justify-content: space-between;
-	align-items: center
+	align-items: center;
+	padding: 20px
 }
 
 #navbar img {
@@ -36,5 +39,11 @@
     color: #fff;
     text-decoration: none
 }
+
+#navbar ul li a:hover {
+	text-decoration: underline #33f7ff 2px
+}
+
+
 
 
