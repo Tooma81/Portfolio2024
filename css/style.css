@@ -8,11 +8,15 @@
 
 /* general */
 
+body {
+	font-family: 'Courier New', monospace;
+}
+
 /* header */
 #navbar {
 	background: #000;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	padding: 20px
 }
@@ -37,6 +41,7 @@
     display: block;
     padding: 10px 15px;
     color: #fff;
+	font-size: 20px;
     text-decoration: none
 }
 
@@ -44,6 +49,26 @@
 	text-decoration: underline #33f7ff 2px
 }
 
+/*showcase*/
+
+#showcase {
+	height: 400px;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url('/showcase.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#showcase a {
+	color: #fff;
+	text-decoration: none;
+}
 
 
 
