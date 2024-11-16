@@ -10,11 +10,30 @@
 
 body {
 	font-family: 'Courier New', monospace;
+	background: #000
+}
+
+body h1 {
+	text-align: center;
+	margin: 30px 30px 20px;
+	color: #fff
+}
+
+p {
+	color: #fff;
+	margin: 20px
+}
+
+hr {
+	border: 0;
+	width: 40%;
+	height: 2px;
+	background: linear-gradient(to right, #E506F3, #36E7EA);
+	margin: auto
 }
 
 /* header */
 #navbar {
-	background: #000;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -46,7 +65,7 @@ body {
 }
 
 #navbar ul li a:hover {
-	text-decoration: underline #33f7ff 2px
+	text-decoration: underline #36E7EA 1px
 }
 
 /*showcase*/
@@ -69,6 +88,61 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
+
+/*about*/
+
+#about-info {
+	display: flex;
+	flex-direction: row;
+}
+
+#intro {
+	width: 50%;
+	line-height: 2;
+	font-size: 20px;
+	margin: 20px
+}
+
+#portrait {
+	width: 50%;
+	margin: 50px
+}
+
+#portrait img {
+	max-width: 100%;
+	height: auto;
+}
+
+#cv-button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#cv-button a {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	background: #9E98DA;
+	padding: 5px 20px;
+	margin: 50px;
+	border: 5px solid #36E7EA;
+	border-radius: 100px;
+}
+
+#cv-button a:hover {
+	cursor: pointer;
+	border-color: #E506F3;
+}
+
+/*skills*/
+
+#skills {
+	height: 200px;
+}
+
+
+
 
 
 
