@@ -32,6 +32,10 @@ hr {
 	margin: auto
 }
 
+img {
+	color: #fff
+}
+
 /* header */
 #navbar {
 	display: flex;
@@ -78,7 +82,7 @@ hr {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url('/showcase.jpg');
+	background-image: url('../showcase.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -123,6 +127,7 @@ hr {
 	color: #fff;
 	font-size: 30px;
 	font-weight: bold;
+	text-decoration: none;
 	background: #9E98DA;
 	padding: 5px 20px;
 	margin: 50px;
@@ -137,8 +142,16 @@ hr {
 
 /*skills*/
 
-#skills {
-	height: 200px;
+#skill-logos {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+
+#skill-logos img {
+	max-height: 200px;
+	padding: 20px
 }
 
 
