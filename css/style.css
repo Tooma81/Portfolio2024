@@ -154,6 +154,30 @@ img {
 	padding: 20px
 }
 
+/*projects*/
+
+#projects-content {
+	display: flex;
+	justify-content: center;
+}
+
+.project {
+	text-align: center;
+	height: 450px;
+	width: 300px;
+	margin: 40px;
+	border: 5px solid #36E7EA;
+}
+
+.project img {
+	height: 250px;
+	width: 100%
+}
+
+.project h2 {
+	color: #fff
+}
+
 
 
 
