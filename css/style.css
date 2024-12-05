@@ -169,6 +169,18 @@ img {
 	border: 5px solid #36E7EA;
 }
 
+.project:hover {
+	border-color: #E506F3;
+}
+
+.project a {
+	text-decoration: none;
+}
+
+.project a:active {
+	text-decoration: none;
+}
+
 .project img {
 	height: 250px;
 	width: 100%
@@ -177,6 +189,97 @@ img {
 .project h2 {
 	color: #fff
 }
+
+/*contact*/
+
+#contact {
+	color: #fff;
+	padding: 40px;
+	background-image: url('../showcase.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#contact h2 {
+	text-align: center;
+	background: #000;
+	width: 50%;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+#contact-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+form {
+	width: 50%;
+	padding: 40px;
+	background: #000;
+}
+
+form input {
+	width: 100%;
+}
+
+#form-btn {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+
+}
+
+#form-btn input {
+	width: 20%;
+	margin: 10px 30px;
+}
+
+#name, #email {
+	height: 30px
+}
+
+#message {
+	height: 100px;
+}
+
+/*footer*/
+
+#footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer img {
+	display: block;
+	height: 150px;
+	margin: 20px;
+	object-fit: contain;
+}
+
+#footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#social-media {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#social-media a {
+	margin: 10px;
+}
+
+
+
+
+
 
 
 
