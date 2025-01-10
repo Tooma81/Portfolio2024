@@ -234,8 +234,21 @@ form input {
 }
 
 #form-btn input {
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	background: #9E98DA;
+	padding: 5px 20px;
+	border: 5px solid #36E7EA;
+	border-radius: 100px;
 	width: 20%;
 	margin: 10px 30px;
+}
+
+#form-btn input:hover {
+	cursor: pointer;
+	border-color: #E506F3;
 }
 
 #name, #email {
@@ -257,7 +270,7 @@ form input {
 #footer img {
 	display: block;
 	height: 150px;
-	margin: 20px;
+	margin: 55px 60px 5px 60px;
 	object-fit: contain;
 }
 
@@ -267,13 +280,20 @@ form input {
 }
 
 #social-media {
-	margin: 20px;
+	height: 150px;
+	font-size: 20px;
+	margin: 55px 60px 5px 60px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 #social-media a {
 	margin: 10px;
+}
+
+p {
+	text-align: center;
 }
 
 
