@@ -167,6 +167,8 @@ img {
 	width: 300px;
 	margin: 40px;
 	border: 5px solid #36E7EA;
+	border-radius: 15px;
+	overflow: hidden;
 }
 
 .project:hover {
@@ -183,7 +185,7 @@ img {
 
 .project img {
 	height: 250px;
-	width: 100%
+	width: 100%;
 }
 
 .project h2 {
@@ -205,21 +207,23 @@ img {
 	text-align: center;
 	background: #000;
 	width: 50%;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding: 20px;
+	border-radius: 20px 20px 0 0;
 }
 
 #contact-form {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center
+	align-items: center;
 }
 
 form {
 	width: 50%;
 	padding: 40px;
 	background: #000;
+	border-radius: 0 0 20px 20px;
 }
 
 form input {
@@ -290,6 +294,10 @@ form input {
 
 #social-media a {
 	margin: 10px;
+}
+
+#social-media a:hover {
+	color: #36E7EA;
 }
 
 p {
