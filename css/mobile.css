@@ -1,0 +1,37 @@
+/*about*/
+
+#intro {
+    width: 100%
+}
+
+#portrait {
+    display: none;
+}
+
+/*contact*/
+
+form {
+    width: 100%;
+}
+
+#contact h2 {
+    width: 100%;
+}
+
+/*footer*/
+
+#footer img {
+    display: none;
+}
+
+.social-media-name {
+    display: none;
+}
+
+#social-media {
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: center;
+}
