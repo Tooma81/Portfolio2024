@@ -10,10 +10,11 @@
 
 body {
 	font-family: 'Courier New', monospace;
-	background: #000
+	background: #000;
 }
 
 body h1 {
+	font-size: 3vh;
 	text-align: center;
 	margin: 30px 30px 20px;
 	color: #fff
@@ -22,6 +23,10 @@ body h1 {
 p {
 	color: #fff;
 	margin: 20px
+}
+
+section {
+	padding-top: 15vh;
 }
 
 hr {
@@ -37,58 +42,71 @@ img {
 }
 
 /* header */
-#navbar {
+nav {
 	display: flex;
+	position: fixed;
+	top: 0;
+	align-self: flex-start;
+	background: #000;
+	height: 15vh;
+	width: 100%;
 	justify-content: space-around;
 	align-items: center;
 	padding: 20px
 }
 
-#navbar img {
-	width: 75px;
+nav img {
+	height: 10vh;
+	width: auto;
 	display: block
 }
 
-#navbar ul {
+nav ul {
 	display: flex;
 	list-style: none;
     margin: 0;
     padding: 0
 }
     
-#navbar ul li {
+nav ul li {
 	margin-left: 20px;
 }
 
-#navbar ul li a {
+nav ul li a {
     display: block;
     padding: 10px 15px;
     color: #fff;
-	font-size: 20px;
+	font-size: 3vh;
     text-decoration: none
 }
 
-#navbar ul li a:hover {
+nav ul li a:hover {
 	text-decoration: underline #36E7EA 1px
 }
 
 /*showcase*/
 
 #showcase {
-	height: 400px;
+	height: 85vh;
 	width: 100%;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-top: 15vh;
 	background-image: url('../showcase.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
+#showcase h1 {
+	font-size: 5vh;
+}
+
 #showcase a {
+	font-size: 3vh;
 	color: #fff;
 	text-decoration: none;
 }
@@ -103,18 +121,23 @@ img {
 #intro {
 	width: 50%;
 	line-height: 2;
-	font-size: 20px;
+	font-size: 3vh;
 	margin: 20px
 }
 
 #portrait {
 	width: 50%;
-	margin: 50px
+	max-height: 100%;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #portrait img {
-	max-width: 100%;
+	max-width: 80%;
 	height: auto;
+	border-radius: 30px;
 }
 
 #cv-button {
@@ -150,7 +173,7 @@ img {
 }
 
 #skill-logos img {
-	max-height: 200px;
+	max-height: 20vh;
 	padding: 20px
 }
 
@@ -258,7 +281,7 @@ form input {
 }
 
 #name, #email {
-	height: 30px
+	height: 30px;
 }
 
 #message {
@@ -267,35 +290,35 @@ form input {
 
 /*footer*/
 
-#footer {
+footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-#footer img {
+footer img {
 	display: block;
-	height: 150px;
-	margin: 55px 60px 5px 60px;
+	height: 15vh;
+	margin: 5vh 3vw 0 3vw;
 	object-fit: contain;
 }
 
-#footer a {
+footer a {
 	color: #fff;
 	text-decoration: none;
 }
 
 #social-media {
-	height: 150px;
-	font-size: 20px;
-	margin: 55px 60px 5px 60px;
+	height: 15vh;
+	font-size: 2.5vh;
+	margin: 5vh 3vw 0 3vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 #social-media a {
-	margin: 10px;
+	margin: 1vh;
 }
 
 #social-media a:hover {
