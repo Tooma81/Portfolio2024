@@ -1,3 +1,23 @@
+/*navbar*/
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    font-size: 2vh;
+}
+
+#sideMenu {
+    width: 0;
+}
+
+#sidemenu-open-btn,
+#sidemenu-close-btn {
+    display: block;
+}
+
 /*about*/
 
 #intro {

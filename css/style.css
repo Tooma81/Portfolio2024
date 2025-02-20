@@ -41,7 +41,7 @@ img {
 	color: #fff
 }
 
-/* header */
+/* navbar */
 nav {
 	display: flex;
 	position: fixed;
@@ -82,6 +82,11 @@ nav ul li a {
 
 nav ul li a:hover {
 	text-decoration: underline #36E7EA 1px
+}
+
+#sidemenu-open-btn,
+#sidemenu-close-btn {
+	display: none;
 }
 
 /*showcase*/

@@ -13,18 +13,22 @@
     <header> 
     	<nav>
 		    <a href="index.html"><img src="img/logo/logo.png" id="header_logo" alt="TK"></a>
-		    <ul>
-                <li><a href="#skills">SKILLS</a></li>
-		    	<li><a href="#projects">PROJECTS</a></li>
-		    	<li><a href="#contact">CONTACT</a></li>
-			</ul>
+            <button id="sidemenu-open-btn" onclick="openMenu()">MENU</button>
+            <div id="sideMenu">
+                <ul>
+                    <button id="sidemenu-close-btn" onclick="closeMenu()">CLOSE</button>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
 		</nav>
+        
 		<div id="showcase">
             <h1>WELCOME TO MY PORTFOLIO</h1>
             <a href="#about">ABOUT ME</a>
 		</div>
     </header>
-
     <section id="about">
         <h1>ABOUT ME</h1>
         <hr>
@@ -125,5 +129,16 @@
         </div>
     </footer>
     <p>&copy;Toomas Kaarel Elmet 2025</p>
+    <!--script for mobile sidemenu-->
+    <script>
+        function openMenu() {
+            document.getElementById("sideMenu").style.width = "250px";
+            console.log("open side menu")
+        }
+        function closeMenu() {
+            document.getElementById("sideMenu").style.width = "0";
+            console.log("close side menu")
+        }
+    </script>
 </body>
 </html>
