@@ -14,7 +14,7 @@ body {
 }
 
 body h1 {
-	font-size: 3vh;
+	font-size: 5vh;
 	text-align: center;
 	margin: 30px 30px 20px;
 	color: #fff
@@ -32,7 +32,7 @@ section {
 hr {
 	border: 0;
 	width: 40%;
-	height: 2px;
+	height: 0.3vh;
 	background: linear-gradient(to right, #E506F3, #36E7EA);
 	margin: auto
 }
@@ -44,15 +44,20 @@ img {
 /* navbar */
 nav {
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	position: fixed;
 	top: 0;
-	align-self: flex-start;
 	background: #000;
 	height: 15vh;
 	width: 100%;
-	justify-content: space-around;
-	align-items: center;
 	padding: 20px
+}
+
+nav button {
+	color: #fff;
+	background: none;
+	border: none;
 }
 
 nav img {
@@ -61,18 +66,11 @@ nav img {
 	display: block
 }
 
-nav ul {
+#nav-menu {
 	display: flex;
-	list-style: none;
-    margin: 0;
-    padding: 0
-}
-    
-nav ul li {
-	margin-left: 20px;
 }
 
-nav ul li a {
+#nav-menu a {
     display: block;
     padding: 10px 15px;
     color: #fff;
@@ -80,7 +78,7 @@ nav ul li a {
     text-decoration: none
 }
 
-nav ul li a:hover {
+#nav-menu a:hover {
 	text-decoration: underline #36E7EA 1px
 }
 

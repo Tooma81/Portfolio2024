@@ -1,16 +1,22 @@
 /*navbar*/
 
-nav ul {
+#nav {
+    padding: 0;
+}
+
+#nav-menu {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-}
-
-nav ul li a {
-    font-size: 2vh;
-}
-
-#sideMenu {
+    background: #000;
+    margin-top: 50px;
+    height: 200vh;
     width: 0;
+}
+
+#nav-menu a {
+    font-size: 2vh;
+    width: 100%
 }
 
 #sidemenu-open-btn,
