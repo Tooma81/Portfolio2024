@@ -128,12 +128,16 @@
     <!--script for mobile sidemenu-->
     <script>
         function openMenu() {
-            document.getElementById("nav-menu").style.width = "50vw";
-            console.log("open side menu")
+            if (window.innerWidth <= 600) {
+                document.getElementById("nav-menu").style.width = "50vw";
+                console.log("open side menu")
+            }
         }
         function closeMenu() {
-            document.getElementById("nav-menu").style.width = "0";
-            console.log("close side menu")
+            if (window.innerWidth <= 600) {
+                document.getElementById("nav-menu").style.width = "0";
+                console.log("close side menu")
+            }    
         }
     </script>
 </body>
