@@ -10,18 +10,18 @@
 
 body {
 	font-family: 'Courier New', monospace;
-	background: #000;
+	background: #fff;
 }
 
 body h1 {
 	font-size: 5vh;
 	text-align: center;
 	margin: 30px 30px 20px;
-	color: #fff
+	color: #000
 }
 
 p {
-	color: #fff;
+	color: #000;
 	margin: 20px
 }
 
@@ -48,7 +48,7 @@ nav {
 	align-items: center;
 	position: fixed;
 	top: 0;
-	background: #000;
+	background: #fff;
 	height: 15vh;
 	width: 100%;
 	padding: 20px
