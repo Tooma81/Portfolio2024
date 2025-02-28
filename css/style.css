@@ -65,11 +65,13 @@ nav button {
 nav img {
 	height: 10vh;
 	width: auto;
-	display: block
+	display: block;
+	transform: translateX(8vw);
 }
 
 #nav-menu {
 	display: flex;
+	transform: translateX(12vw);
 }
 
 #nav-menu a {
@@ -86,6 +88,17 @@ nav img {
 
 #sidemenu-open-btn,
 #sidemenu-close-btn {
+	display: none;
+}
+
+#dark-switch,
+#light-switch {
+	font-size: 5vh;
+	margin: 0 5vw;
+	width: 1vw;
+}
+
+#dark-switch {
 	display: none;
 }
 

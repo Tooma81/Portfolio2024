@@ -19,6 +19,8 @@
             <a href="#skills" onclick="closeMenu()">SKILLS</a>
             <a href="#projects" onclick="closeMenu()">PROJECTS</a>
             <a href="#contact" onclick="closeMenu()">CONTACT</a>
+            <button id="light-switch" onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
+            <button id="dark-switch" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
         </div>
     </nav> 
     <hr>
@@ -135,8 +137,8 @@
         </div>
     </footer>
     <p>&copy;Toomas Kaarel Elmet 2025</p>
-    <!--script for mobile sidemenu-->
     <script>
+        //script for mobile sidemenu
         function openMenu() {
             if (window.innerWidth <= 600) {
                 document.getElementById("nav-menu").style.width = "50vw";
@@ -148,6 +150,17 @@
                 document.getElementById("nav-menu").style.width = "0";
                 console.log("close side menu")
             }    
+        }
+        //script for theme switcher
+        function lightMode() {
+            document.getElementById("light-switch").style.display = "none";
+            document.getElementById("dark-switch").style.display = "block";
+            console.log("light mode enabled")
+        }
+        function darkMode() {
+            document.getElementById("light-switch").style.display = "block";
+            document.getElementById("dark-switch").style.display = "none";
+            console.log("dark mode enabled")
         }
     </script>
 </body>
