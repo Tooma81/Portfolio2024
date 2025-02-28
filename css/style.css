@@ -51,7 +51,9 @@ nav {
 	background: #000;
 	height: 15vh;
 	width: 100%;
-	padding: 20px
+	padding: 20px;
+	border-bottom: 0.5vh solid;
+	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
 }
 
 nav button {
@@ -90,14 +92,14 @@ nav img {
 /*showcase*/
 
 #showcase {
-	height: 85vh;
+	height: 90vh;
 	width: 100%;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 15vh;
+	margin-top: 10vh;
 	background-image: url('../showcase.jpg');
 	background-size: cover;
 	background-position: center;
