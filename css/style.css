@@ -73,7 +73,7 @@ nav img {
 #nav-menu a {
     display: block;
     padding: 10px 15px;
-    color: #fff;
+    color: #000;
 	font-size: 3vh;
     text-decoration: none
 }
@@ -105,6 +105,7 @@ nav img {
 }
 
 #showcase h1 {
+	color: #fff;
 	font-size: 5vh;
 }
 
@@ -222,7 +223,7 @@ nav img {
 /*contact*/
 
 #contact {
-	color: #fff;
+	color: #000;
 	padding: 40px;
 	background-image: url('../showcase.jpg');
 	background-size: cover;
@@ -232,7 +233,7 @@ nav img {
 
 #contact h2 {
 	text-align: center;
-	background: #000;
+	background: #fff;
 	width: 50%;
 	margin-top: 30px;
 	padding: 20px;
@@ -249,7 +250,7 @@ nav img {
 form {
 	width: 50%;
 	padding: 40px;
-	background: #000;
+	background: #fff;
 	border-radius: 0 0 20px 20px;
 }
 
@@ -307,7 +308,7 @@ footer img {
 }
 
 footer a {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 
