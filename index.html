@@ -15,18 +15,18 @@
         <button id="sidemenu-open-btn" onclick="openMenu()"><i class="fa-solid fa-bars fa-2xl"></i></button>
         <div id="nav-menu">
             <button id="sidemenu-close-btn" onclick="closeMenu()"><i class="fa-solid fa-xmark fa-2xl"></i></button>
-            <a href="#about" onclick="closeMenu()">ABOUT</a>
-            <a href="#skills" onclick="closeMenu()">SKILLS</a>
-            <a href="#projects" onclick="closeMenu()">PROJECTS</a>
-            <a href="#contact" onclick="closeMenu()">CONTACT</a>
+            <a class="menu-btn" href="#about" onclick="closeMenu()">ABOUT</a>
+            <a class="menu-btn" href="#skills" onclick="closeMenu()">SKILLS</a>
+            <a class="menu-btn" href="#projects" onclick="closeMenu()">PROJECTS</a>
+            <a class="menu-btn" href="#contact" onclick="closeMenu()">CONTACT</a>
             <button id="light-switch" onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
             <button id="dark-switch" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
         </div>
     </nav> 
     <hr>
     <div id="showcase">
-        <h1>WELCOME TO MY PORTFOLIO</h1>
-        <a href="#about">ABOUT ME</a>
+        <h1 class="ignore-theme">WELCOME TO MY PORTFOLIO</h1>
+        <a href="#about" class="ignore-theme">ABOUT ME</a>
     </div>
     <section id="about">
         <h1>ABOUT ME</h1>
@@ -110,7 +110,7 @@
         </div>
     </section>
     <section id="contact">
-        <h1>CONTACT</h1>
+        <h1 class="ignore-theme">CONTACT</h1>
         <hr>
         <div id="contact-form">
             <h2>PLEASE FILL THE FROM</h2>
@@ -155,11 +155,57 @@
         function lightMode() {
             document.getElementById("light-switch").style.display = "none";
             document.getElementById("dark-switch").style.display = "block";
+            document.querySelector("nav").style.background = "#fff";
+            document.querySelectorAll("a").forEach(link => {
+                if (!link.classList.contains("ignore-theme")) {
+                    link.style.color = "#000";
+                }
+            });
+            document.querySelectorAll("h1").forEach(title => {
+                if (!title.classList.contains("ignore-theme")) {
+                    title.style.color = "#000";
+                }
+            });
+            document.querySelectorAll("h2").forEach(title2 => {
+                title2.style.color = "#000";
+                title2.style.background = "#fff";
+            });
+            document.querySelectorAll("p").forEach(paragraph => {
+                paragraph.style.color = "#000";
+            });
+            document.querySelectorAll("form").forEach(form => {
+                form.style.background = "#fff";
+            });
+            document.querySelectorAll("label").forEach(label => {
+                label.style.color = "#000";
+            });
+            document.body.style.background = "#fff";
             console.log("light mode enabled")
         }
         function darkMode() {
             document.getElementById("light-switch").style.display = "block";
             document.getElementById("dark-switch").style.display = "none";
+            document.querySelector("nav").style.background = "#000";
+            document.querySelectorAll("a").forEach(link => {
+                link.style.color = "#fff";
+            });
+            document.querySelectorAll("h1").forEach(title => {
+                title.style.color = "#fff";
+            });
+            document.querySelectorAll("h2").forEach(title2 => {
+                title2.style.color = "#fff";
+                title2.style.background = "#000";
+            });
+            document.querySelectorAll("p").forEach(paragraph => {
+                paragraph.style.color = "#fff";
+            });
+            document.querySelectorAll("form").forEach(form => {
+                form.style.background = "#000";
+            });
+            document.querySelectorAll("label").forEach(label => {
+                label.style.color = "#fff";
+            });
+            document.body.style.background = "#000"
             console.log("dark mode enabled")
         }
     </script>
