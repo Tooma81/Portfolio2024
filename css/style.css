@@ -22,6 +22,7 @@ body h1 {
 
 p {
 	color: #fff;
+	font-size: 3vh;
 	margin: 20px
 }
 
@@ -192,8 +193,8 @@ nav img {
 }
 
 #skill-logos img {
-	max-height: 25vh;
-	padding: 20px
+	max-height: 20vh;
+	padding: 1vw
 }
 
 /*projects*/
@@ -344,7 +345,8 @@ footer a {
 	color: #36E7EA;
 }
 
-p {
+#copyright {
+	font-size: 2vh;
 	text-align: center;
 }
 

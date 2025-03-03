@@ -136,7 +136,7 @@
             <a href="https://www.linkedin.com/in/toomas-kaarel-elmet-828258330/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i> <span class="social-media-name">LINKEDIN</span></a>
         </div>
     </footer>
-    <p>&copy;Toomas Kaarel Elmet 2025</p>
+    <p id="copyright">&copy;Toomas Kaarel Elmet 2025</p>
     <script>
         //script for mobile sidemenu
         function openMenu() {
@@ -155,6 +155,9 @@
         function lightMode() {
             document.getElementById("light-switch").style.display = "none";
             document.getElementById("dark-switch").style.display = "block";
+            document.getElementById("nav-menu").style.background = "#fff";
+            document.getElementById("sidemenu-open-btn").style.color = "#000";
+            document.getElementById("sidemenu-close-btn").style.color = "#000";
             document.querySelector("nav").style.background = "#fff";
             document.querySelectorAll("a").forEach(link => {
                 if (!link.classList.contains("ignore-theme")) {
@@ -185,6 +188,9 @@
         function darkMode() {
             document.getElementById("light-switch").style.display = "block";
             document.getElementById("dark-switch").style.display = "none";
+            document.getElementById("nav-menu").style.background = "#000";
+            document.getElementById("sidemenu-open-btn").style.color = "#fff";
+            document.getElementById("sidemenu-close-btn").style.color = "#fff";
             document.querySelector("nav").style.background = "#000";
             document.querySelectorAll("a").forEach(link => {
                 link.style.color = "#fff";
