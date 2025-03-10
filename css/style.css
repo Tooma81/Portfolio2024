@@ -154,7 +154,7 @@ nav img {
 }
 
 #portrait img {
-	max-width: 80%;
+	width: 60%;
 	height: auto;
 	border-radius: 30px;
 }
