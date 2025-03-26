@@ -116,13 +116,13 @@
         <hr>
         <div id="contact-form">
             <h2>PLEASE FILL THE FROM</h2>
-            <form action="send_form.php" method="POST">
+            <form action="send_form.php" method="POST" id="contactForm">
                 <label for="name">NAME</label><br>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
                 <label for="email">EMAIL</label><br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
                 <label for="message">MESSAGE</label><br>
-                <input type="text" id="message" name="message" placeholder="Add a message" required><br><br>
+                <textarea id="message" name="message" placeholder="Add a message" required></textarea><br><br>
                 <div id="form-btn">
                     <input type="submit" value="Submit"><br>
                     <input type="reset" value="Clear">
